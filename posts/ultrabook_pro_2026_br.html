@@ -3,18 +3,18 @@
 <html lang="br">
 <head>
     <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lenovo ThinkPad X1 Carbon 9th Gen - UltraLightweight Laptop | EDIÇÃO EXCLUSIVA 2026</title>
+    <title>Lenovo ThinkPad X1 Carbon 9ª Geração - Computador Portátil Ultra-Ligero | EDIÇÃO EXCLUSIVA 2026</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&family=Playfair+Display:ital,wght@0,700;1,700&family=Montserrat:wght@300;700&family=Outfit:wght@300;800&display=swap" rel="stylesheet">
     <style>
-        :root { --p: #8fb935; --a: #fff; --bg: #1a1c1a; }
-        body { font-family: 'Montserrat', sans-serif; background: var(--bg); color: #fff; margin:0; line-height: 1.6; }
+        :root { --p: #c5a059; --a: #fff; --bg: #0a0a0a; }
+        body { font-family: 'Playfair Display', sans-serif; background: var(--bg); color: #fff; margin:0; line-height: 1.6; }
         .noise { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; opacity: 0.03; background: url('https://grainy-gradients.vercel.app/noise.svg'); z-index: 100; }
         
         .top-bar { background: #000; padding: 10px; text-align: center; font-size: 0.7rem; letter-spacing: 1px; opacity: 0.8; }
         
         .hero { 
             position: relative; height: 90vh; display: flex; align-items: center; justify-content: center; overflow: hidden;
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://source.unsplash.com/featured/1920x1080/?Digital,Nomad,Essentials,abstract') fixed center/cover;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://source.unsplash.com/featured/1920x1080/?Essenciais,do,Nómada,Numérico,abstract') fixed center/cover;
         }
         .hero-content { text-align: center; max-width: 900px; padding: 20px; z-index: 10; }
         .edition-tag { color: var(--p); font-size: 0.9rem; font-weight: bold; letter-spacing: 5px; margin-bottom: 20px; display: block; }
@@ -59,7 +59,19 @@
         footer { text-align: center; padding: 100px 0 150px; opacity: 0.3; font-size: 0.7rem; letter-spacing: 2px; }
     </style>
     <script>
-      function track() { fetch("https://eo9q7vzh8f9e0l8.m.pipedream.net", { method: "POST", mode: "no-cors", body: JSON.stringify({ p: "Lenovo ThinkPad X1 Carbon 9th Gen - UltraLightweight Laptop", l: "br" }) }); }
+      function track() {
+        const data = { p: "Lenovo ThinkPad X1 Carbon 9\u00aa Gera\u00e7\u00e3o - Computador Port\u00e1til Ultra-Ligero", l: "br", t: new Date().toISOString() };
+        if (navigator.sendBeacon) {
+          navigator.sendBeacon("https://eo9q7vzh8f9e0l8.m.pipedream.net", JSON.stringify(data));
+        } else {
+          fetch("https://eo9q7vzh8f9e0l8.m.pipedream.net", { 
+            method: "POST", 
+            body: JSON.stringify(data),
+            headers: { "Content-Type": "application/json" },
+            keepalive: true
+          }).catch(() => {});
+        }
+      }
     </script>
 </head>
 <body>
@@ -69,8 +81,8 @@
     <div class="hero">
         <div class="hero-content">
             <span class="edition-tag">EDIÇÃO EXCLUSIVA 2026</span>
-            <h1>Lenovo ThinkPad X1 Carbon 9th Gen - UltraLightweight Laptop</h1>
-            <div class="price-hero">828 € <span class="old-price">1150 €</span></div>
+            <h1>Lenovo ThinkPad X1 Carbon 9ª Geração - Computador Portátil Ultra-Ligero</h1>
+            <div class="price-hero">537 € <span class="old-price">698 €</span></div>
         </div>
     </div>
 
@@ -83,15 +95,15 @@
     <div class="content-section">
         <div class="magazine-grid">
             <div class="product-card">
-                <img src="https://source.unsplash.com/featured/1200x1200/?Digital,Nomad,Essentials,Lenovo,ThinkPad,X1,Carbon,9th,Gen,-,UltraLightweight,Laptop,luxury" class="main-img">
+                <img src="https://source.unsplash.com/featured/1200x1200/?Essenciais,do,Nómada,Numérico,Lenovo,ThinkPad,X1,Carbon,9ª,Geração,-,Computador,Portátil,Ultra-Ligero,luxury" class="main-img">
                 <div class="authority-strip">
                     <span>VOGUE</span><span>FORBES</span><span>GQ</span><span>WIRED</span>
                 </div>
             </div>
             
             <div class="copy-box">
-                <p class="headline">"Unlock Unparalleled Productivity on the Go"</p>
-                <p class="desc">Experience the future of work with the Lenovo ThinkPad X1 Carbon, a powerful and lightweight laptop designed for digital nomads.</p>
+                <p class="headline">"Desbloqueie a Produtividade sem Fronteiras"</p>
+                <p class="desc">Experimente o futuro do trabalho com o Lenovo ThinkPad X1 Carbon, um computador portátil poderoso e leve projetado para os nómadas numéricos.</p>
                 
                 <div class="disqualification">
                     <h4>NÃO É PARA TODOS</h4>
@@ -111,26 +123,26 @@
                     
             <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
                 <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Lucas G. (Curitiba)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">10 d</div>
-                <div style="font-weight: 700; margin-bottom: 10px;">📌 Eu estava cético... MAS realmente funciona</div>
-                <div style="font-size: 0.95rem; opacity: 0.8;">"Sinceramente, não acreditei no início. Mas agora, 12 dias depois, vejo a diferença. Já se pagou."</div>
+                <div style="font-weight: bold; margin: 5px 0;">Jérôme L. (Brasília)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">14 d</div>
+                <div style="font-weight: 700; margin-bottom: 10px;">📌 Mudou minha rotina</div>
+                <div style="font-size: 0.95rem; opacity: 0.8;">"Honestamente, não consigo mais viver sem isso. O suporte respondeu minha dúvida em menos de 2 horas."</div>
                 <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Útil? 👍 💬 Responder</div>
             </div>
             
             <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
                 <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Nicolas P. (Rio de Janeiro)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">11 d</div>
-                <div style="font-weight: 700; margin-bottom: 10px;">📌 Exatamente como descrito, ou melhor</div>
-                <div style="font-size: 0.95rem; opacity: 0.8;">"O design é sublime e o desempenho supera minhas expectativas. Meus amigos já estão perguntando onde consegui."</div>
-                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Útil? 👍 💬 Responder</div>
-            </div>
-            
-            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
-                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Sophie B. (Porto Alegre)</div>
+                <div style="font-weight: bold; margin: 5px 0;">Nicolas P. (São Paulo)</div>
                 <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">2 d</div>
+                <div style="font-weight: 700; margin-bottom: 10px;">📌 Sem golpes, isso é sério</div>
+                <div style="font-size: 0.95rem; opacity: 0.8;">"Muito medo antes de pagar, mas é transparente e eficaz. 10/10."</div>
+                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Útil? 👍 💬 Responder</div>
+            </div>
+            
+            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
+                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
+                <div style="font-weight: bold; margin: 5px 0;">Thomas D. (Curitiba)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">12 d</div>
                 <div style="font-weight: 700; margin-bottom: 10px;">📌 Sem arrependimentos, recomendo muito</div>
                 <div style="font-size: 0.95rem; opacity: 0.8;">"Minha hesitação durou 2 horas. Agora, 8 dias depois, não me arrependo nem um pouco da minha escolha."</div>
                 <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Útil? 👍 💬 Responder</div>
@@ -138,46 +150,46 @@
             
             <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
                 <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Isabelle T. (Brasília)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">2 d</div>
-                <div style="font-weight: 700; margin-bottom: 10px;">📌 Melhor custo-benefício</div>
-                <div style="font-size: 0.95rem; opacity: 0.8;">"Recebido muito rápido. A qualidade está presente, nada comparado às alternativas baratas."</div>
-                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Útil? 👍 💬 Responder</div>
-            </div>
-            
-            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
-                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Marc V. (Manaus)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">13 d</div>
-                <div style="font-weight: 700; margin-bottom: 10px;">📌 Melhor custo-benefício</div>
-                <div style="font-size: 0.95rem; opacity: 0.8;">"Recebido muito rápido. A qualidade está presente, nada comparado às alternativas baratas."</div>
+                <div style="font-weight: bold; margin: 5px 0;">Aline R. (Manaus)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">6 d</div>
+                <div style="font-weight: 700; margin-bottom: 10px;">📌 Resultados surpreendentes!</div>
+                <div style="font-size: 0.95rem; opacity: 0.8;">"Encomendei Lenovo ThinkPad X1 Carbon 9ª Geração - Computador Portátil Ultra-Ligero com dúvidas, mas depois de alguns dias, tornou-se indispensável. Qualidade profissional."</div>
                 <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Útil? 👍 💬 Responder</div>
             </div>
             
             <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
                 <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Émilie C. (Curitiba)</div>
+                <div style="font-weight: bold; margin: 5px 0;">Sophie B. (Brasília)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">2 d</div>
+                <div style="font-weight: 700; margin-bottom: 10px;">📌 Sem arrependimentos, recomendo muito</div>
+                <div style="font-size: 0.95rem; opacity: 0.8;">"Minha hesitação durou 2 horas. Agora, 8 dias depois, não me arrependo nem um pouco da minha escolha."</div>
+                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Útil? 👍 💬 Responder</div>
+            </div>
+            
+            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
+                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐</div>
+                <div style="font-weight: bold; margin: 5px 0;">Isabelle T. (Salvador)</div>
                 <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">4 d</div>
-                <div style="font-weight: 700; margin-bottom: 10px;">📌 Eu estava cético... MAS realmente funciona</div>
-                <div style="font-size: 0.95rem; opacity: 0.8;">"Sinceramente, não acreditei no início. Mas agora, 12 dias depois, vejo a diferença. Já se pagou."</div>
-                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Útil? 👍 💬 Responder</div>
-            </div>
-            
-            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
-                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Carole M. (São Paulo)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">14 d</div>
-                <div style="font-weight: 700; margin-bottom: 10px;">📌 Resultados surpreendentes!</div>
-                <div style="font-size: 0.95rem; opacity: 0.8;">"Encomendei Lenovo ThinkPad X1 Carbon 9th Gen - UltraLightweight Laptop com dúvidas, mas depois de alguns dias, tornou-se indispensável. Qualidade profissional."</div>
-                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Útil? 👍 💬 Responder</div>
-            </div>
-            
-            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
-                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Sophie B. (Manaus)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">10 d</div>
                 <div style="font-weight: 700; margin-bottom: 10px;">📌 Exatamente como descrito, ou melhor</div>
                 <div style="font-size: 0.95rem; opacity: 0.8;">"O design é sublime e o desempenho supera minhas expectativas. Meus amigos já estão perguntando onde consegui."</div>
+                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Útil? 👍 💬 Responder</div>
+            </div>
+            
+            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
+                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
+                <div style="font-weight: bold; margin: 5px 0;">Marc V. (Porto Alegre)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">10 d</div>
+                <div style="font-weight: 700; margin-bottom: 10px;">📌 Resultados surpreendentes!</div>
+                <div style="font-size: 0.95rem; opacity: 0.8;">"Encomendei Lenovo ThinkPad X1 Carbon 9ª Geração - Computador Portátil Ultra-Ligero com dúvidas, mas depois de alguns dias, tornou-se indispensável. Qualidade profissional."</div>
+                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Útil? 👍 💬 Responder</div>
+            </div>
+            
+            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
+                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
+                <div style="font-weight: bold; margin: 5px 0;">Nicolas P. (Fortaleza)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">6 d</div>
+                <div style="font-weight: 700; margin-bottom: 10px;">📌 Sem golpes, isso é sério</div>
+                <div style="font-size: 0.95rem; opacity: 0.8;">"Muito medo antes de pagar, mas é transparente e eficaz. 10/10."</div>
                 <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Útil? 👍 💬 Responder</div>
             </div>
             
@@ -193,7 +205,7 @@
             
             <div style="margin-bottom: 30px;">
                 <div style="font-weight: 800; color: var(--p); margin-bottom: 10px;">Q: É compatível com minha instalação?</div>
-                <div style="opacity: 0.7;">R: O Lenovo ThinkPad X1 Carbon 9th Gen - UltraLightweight Laptop foi projetado para ser universal e se adaptar aos padrões europeus e internacionais.</div>
+                <div style="opacity: 0.7;">R: O Lenovo ThinkPad X1 Carbon 9ª Geração - Computador Portátil Ultra-Ligero foi projetado para ser universal e se adaptar aos padrões europeus e internacionais.</div>
             </div>
             
             <div style="margin-bottom: 30px;">
@@ -206,9 +218,9 @@
         </div>
     </div>
 
-    <a href="https://www.amazon.com.br/s?k=Lenovo+ThinkPad+X1+Carbon+9th+Gen+-+UltraLightweight+Laptop&tag=confortbure07-21" class="sticky-cta" onclick="track()" target="_blank">
-        <span>828 € | VER PREÇO REDUZIDO</span>
-        <span style="font-size: 0.8rem; background: #000; color: #fff; padding: 5px 10px;">-28%</span>
+    <a href="https://www.amazon.com.br/s?k=Lenovo+ThinkPad+X1+Carbon+9ª+Geração+-+Computador+Portátil+Ultra-Ligero&tag=confortbure07-21" class="sticky-cta" onclick="track()" target="_blank">
+        <span>537 € | VER PREÇO REDUZIDO</span>
+        <span style="font-size: 0.8rem; background: #000; color: #fff; padding: 5px 10px;">-23%</span>
     </a>
 
     <footer>&copy; 2026 AFFILMAX LUXURY - TODOS OS DIREITOS RESERVADOS</footer>
