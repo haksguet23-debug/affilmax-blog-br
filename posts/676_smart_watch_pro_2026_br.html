@@ -3,7 +3,7 @@
 <html lang="br">
 <head>
     <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Garmin Forerunner 965 Smartwatch (2026 Edition) | EDIÇÃO EXCLUSIVA 2026</title>
+    <title>Garmin Forerunner 965 - Relógio conectado de luxo (Edição 2026) | EDIÇÃO EXCLUSIVA 2026</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&family=Playfair+Display:ital,wght@0,700;1,700&family=Montserrat:wght@300;700&family=Outfit:wght@300;800&display=swap" rel="stylesheet">
     <style>
         :root { --p: #8fb935; --a: #fff; --bg: #1a1c1a; }
@@ -14,7 +14,7 @@
         
         .hero { 
             position: relative; height: 90vh; display: flex; align-items: center; justify-content: center; overflow: hidden;
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://source.unsplash.com/featured/1920x1080/?Smartwatches,&,Fitness,Trackers,abstract') fixed center/cover;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://source.unsplash.com/featured/1920x1080/?Relógios,conectados,&,Seguidores,de,forma,abstract') fixed center/cover;
         }
         .hero-content { text-align: center; max-width: 900px; padding: 20px; z-index: 10; }
         .edition-tag { color: var(--p); font-size: 0.9rem; font-weight: bold; letter-spacing: 5px; margin-bottom: 20px; display: block; }
@@ -59,7 +59,19 @@
         footer { text-align: center; padding: 100px 0 150px; opacity: 0.3; font-size: 0.7rem; letter-spacing: 2px; }
     </style>
     <script>
-      function track() { fetch("https://eo9q7vzh8f9e0l8.m.pipedream.net", { method: "POST", mode: "no-cors", body: JSON.stringify({ p: "Garmin Forerunner 965 Smartwatch (2026 Edition)", l: "br" }) }); }
+      function track() {
+        const data = { p: "Garmin Forerunner 965 - Rel\u00f3gio conectado de luxo (Edi\u00e7\u00e3o 2026)", l: "br", t: new Date().toISOString() };
+        if (navigator.sendBeacon) {
+          navigator.sendBeacon("https://eo9q7vzh8f9e0l8.m.pipedream.net", JSON.stringify(data));
+        } else {
+          fetch("https://eo9q7vzh8f9e0l8.m.pipedream.net", { 
+            method: "POST", 
+            body: JSON.stringify(data),
+            headers: { "Content-Type": "application/json" },
+            keepalive: true
+          }).catch(() => {});
+        }
+      }
     </script>
 </head>
 <body>
@@ -69,8 +81,8 @@
     <div class="hero">
         <div class="hero-content">
             <span class="edition-tag">EDIÇÃO EXCLUSIVA 2026</span>
-            <h1>Garmin Forerunner 965 Smartwatch (2026 Edition)</h1>
-            <div class="price-hero">3141 € <span class="old-price">4245 €</span></div>
+            <h1>Garmin Forerunner 965 - Relógio conectado de luxo (Edição 2026)</h1>
+            <div class="price-hero">615 € <span class="old-price">976 €</span></div>
         </div>
     </div>
 
@@ -83,15 +95,15 @@
     <div class="content-section">
         <div class="magazine-grid">
             <div class="product-card">
-                <img src="https://source.unsplash.com/featured/1200x1200/?Smartwatches,&,Fitness,Trackers,Garmin,Forerunner,965,Smartwatch,(2026,Edition),luxury" class="main-img">
+                <img src="https://source.unsplash.com/featured/1200x1200/?Relógios,conectados,&,Seguidores,de,forma,Garmin,Forerunner,965,-,Relógio,conectado,de,luxo,(Edição,2026),luxury" class="main-img">
                 <div class="authority-strip">
                     <span>VOGUE</span><span>FORBES</span><span>GQ</span><span>WIRED</span>
                 </div>
             </div>
             
             <div class="copy-box">
-                <p class="headline">"Get the Ultimate Fitness Companion with the Most Advanced Smartwatch on the Market"</p>
-                <p class="desc">Take your fitness journey to the next level with the Garmin Forerunner 965, featuring advanced health monitoring, GPS tracking, and a sleek, durable design perfect for digital nomads who demand the best.</p>
+                <p class="headline">"Obtenha o companheiro de fitness ultimate com o relógio inteligente mais avançado do mercado"</p>
+                <p class="desc">Leve seu treino de fitness para um nível superior com o Garmin Forerunner 965, que oferece um seguimento de saúde avançado, um seguimento GPS e um design elegante e durável perfeito para os entusiastas de relógios exigentes que exigem o melhor.</p>
                 
                 <div class="disqualification">
                     <h4>NÃO É PARA TODOS</h4>
@@ -111,35 +123,26 @@
                     
             <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
                 <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Carole M. (Salvador)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">5 d</div>
-                <div style="font-weight: 700; margin-bottom: 10px;">📌 Mudou minha rotina</div>
-                <div style="font-size: 0.95rem; opacity: 0.8;">"Honestamente, não consigo mais viver sem isso. O suporte respondeu minha dúvida em menos de 2 horas."</div>
+                <div style="font-weight: bold; margin: 5px 0;">Lucas G. (São Paulo)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">4 d</div>
+                <div style="font-weight: 700; margin-bottom: 10px;">📌 Exatamente como descrito, ou melhor</div>
+                <div style="font-size: 0.95rem; opacity: 0.8;">"O design é sublime e o desempenho supera minhas expectativas. Meus amigos já estão perguntando onde consegui."</div>
                 <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Útil? 👍 💬 Responder</div>
             </div>
             
             <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
                 <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Lucas G. (Recife)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">5 d</div>
-                <div style="font-weight: 700; margin-bottom: 10px;">📌 Eu estava cético... MAS realmente funciona</div>
-                <div style="font-size: 0.95rem; opacity: 0.8;">"Sinceramente, não acreditei no início. Mas agora, 12 dias depois, vejo a diferença. Já se pagou."</div>
+                <div style="font-weight: bold; margin: 5px 0;">Isabelle T. (Manaus)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">3 d</div>
+                <div style="font-weight: 700; margin-bottom: 10px;">📌 Exatamente como descrito, ou melhor</div>
+                <div style="font-size: 0.95rem; opacity: 0.8;">"O design é sublime e o desempenho supera minhas expectativas. Meus amigos já estão perguntando onde consegui."</div>
                 <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Útil? 👍 💬 Responder</div>
             </div>
             
             <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
                 <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Émilie C. (Porto Alegre)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">13 d</div>
-                <div style="font-weight: 700; margin-bottom: 10px;">📌 Resultados surpreendentes!</div>
-                <div style="font-size: 0.95rem; opacity: 0.8;">"Encomendei Garmin Forerunner 965 Smartwatch (2026 Edition) com dúvidas, mas depois de alguns dias, tornou-se indispensável. Qualidade profissional."</div>
-                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Útil? 👍 💬 Responder</div>
-            </div>
-            
-            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
-                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Jérôme L. (Brasília)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">10 d</div>
+                <div style="font-weight: bold; margin: 5px 0;">Thomas D. (Porto Alegre)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">2 d</div>
                 <div style="font-weight: 700; margin-bottom: 10px;">📌 Sem golpes, isso é sério</div>
                 <div style="font-size: 0.95rem; opacity: 0.8;">"Muito medo antes de pagar, mas é transparente e eficaz. 10/10."</div>
                 <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Útil? 👍 💬 Responder</div>
@@ -147,25 +150,34 @@
             
             <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
                 <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Nicolas P. (Fortaleza)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">13 d</div>
-                <div style="font-weight: 700; margin-bottom: 10px;">📌 Eu estava cético... MAS realmente funciona</div>
-                <div style="font-size: 0.95rem; opacity: 0.8;">"Sinceramente, não acreditei no início. Mas agora, 12 dias depois, vejo a diferença. Já se pagou."</div>
+                <div style="font-weight: bold; margin: 5px 0;">Aline R. (Manaus)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">2 d</div>
+                <div style="font-weight: 700; margin-bottom: 10px;">📌 Resultados surpreendentes!</div>
+                <div style="font-size: 0.95rem; opacity: 0.8;">"Encomendei Garmin Forerunner 965 - Relógio conectado de luxo (Edição 2026) com dúvidas, mas depois de alguns dias, tornou-se indispensável. Qualidade profissional."</div>
+                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Útil? 👍 💬 Responder</div>
+            </div>
+            
+            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
+                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
+                <div style="font-weight: bold; margin: 5px 0;">Thomas D. (Belo Horizonte)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">12 d</div>
+                <div style="font-weight: 700; margin-bottom: 10px;">📌 Resultados surpreendentes!</div>
+                <div style="font-size: 0.95rem; opacity: 0.8;">"Encomendei Garmin Forerunner 965 - Relógio conectado de luxo (Edição 2026) com dúvidas, mas depois de alguns dias, tornou-se indispensável. Qualidade profissional."</div>
                 <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Útil? 👍 💬 Responder</div>
             </div>
             
             <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
                 <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
                 <div style="font-weight: bold; margin: 5px 0;">Jérôme L. (Rio de Janeiro)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">12 d</div>
-                <div style="font-weight: 700; margin-bottom: 10px;">📌 Sem arrependimentos, recomendo muito</div>
-                <div style="font-size: 0.95rem; opacity: 0.8;">"Minha hesitação durou 2 horas. Agora, 8 dias depois, não me arrependo nem um pouco da minha escolha."</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">13 d</div>
+                <div style="font-weight: 700; margin-bottom: 10px;">📌 Resultados surpreendentes!</div>
+                <div style="font-size: 0.95rem; opacity: 0.8;">"Encomendei Garmin Forerunner 965 - Relógio conectado de luxo (Edição 2026) com dúvidas, mas depois de alguns dias, tornou-se indispensável. Qualidade profissional."</div>
                 <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Útil? 👍 💬 Responder</div>
             </div>
             
             <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
-                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Lucas G. (Brasília)</div>
+                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐</div>
+                <div style="font-weight: bold; margin: 5px 0;">Aline R. (Brasília)</div>
                 <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">7 d</div>
                 <div style="font-weight: 700; margin-bottom: 10px;">📌 Sem golpes, isso é sério</div>
                 <div style="font-size: 0.95rem; opacity: 0.8;">"Muito medo antes de pagar, mas é transparente e eficaz. 10/10."</div>
@@ -173,11 +185,11 @@
             </div>
             
             <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
-                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Jérôme L. (Salvador)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">4 d</div>
-                <div style="font-weight: 700; margin-bottom: 10px;">📌 Resultados surpreendentes!</div>
-                <div style="font-size: 0.95rem; opacity: 0.8;">"Encomendei Garmin Forerunner 965 Smartwatch (2026 Edition) com dúvidas, mas depois de alguns dias, tornou-se indispensável. Qualidade profissional."</div>
+                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐</div>
+                <div style="font-weight: bold; margin: 5px 0;">Nicolas P. (Manaus)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">12 d</div>
+                <div style="font-weight: 700; margin-bottom: 10px;">📌 Sem golpes, isso é sério</div>
+                <div style="font-size: 0.95rem; opacity: 0.8;">"Muito medo antes de pagar, mas é transparente e eficaz. 10/10."</div>
                 <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Útil? 👍 💬 Responder</div>
             </div>
             
@@ -193,7 +205,7 @@
             
             <div style="margin-bottom: 30px;">
                 <div style="font-weight: 800; color: var(--p); margin-bottom: 10px;">Q: É compatível com minha instalação?</div>
-                <div style="opacity: 0.7;">R: O Garmin Forerunner 965 Smartwatch (2026 Edition) foi projetado para ser universal e se adaptar aos padrões europeus e internacionais.</div>
+                <div style="opacity: 0.7;">R: O Garmin Forerunner 965 - Relógio conectado de luxo (Edição 2026) foi projetado para ser universal e se adaptar aos padrões europeus e internacionais.</div>
             </div>
             
             <div style="margin-bottom: 30px;">
@@ -206,9 +218,9 @@
         </div>
     </div>
 
-    <a href="https://www.amazon.com.br/s?k=Garmin+Forerunner+965+Smartwatch+(2026+Edition)&tag=confortbure07-21" class="sticky-cta" onclick="track()" target="_blank">
-        <span>3141 € | VER PREÇO REDUZIDO</span>
-        <span style="font-size: 0.8rem; background: #000; color: #fff; padding: 5px 10px;">-26%</span>
+    <a href="https://www.amazon.com.br/s?k=Garmin+Forerunner+965+-+Relógio+conectado+de+luxo+(Edição+2026)&tag=confortbure07-21" class="sticky-cta" onclick="track()" target="_blank">
+        <span>615 € | VER PREÇO REDUZIDO</span>
+        <span style="font-size: 0.8rem; background: #000; color: #fff; padding: 5px 10px;">-37%</span>
     </a>
 
     <footer>&copy; 2026 AFFILMAX LUXURY - TODOS OS DIREITOS RESERVADOS</footer>
