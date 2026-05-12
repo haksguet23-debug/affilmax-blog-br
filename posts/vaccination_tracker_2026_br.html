@@ -3,18 +3,18 @@
 <html lang="br">
 <head>
     <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vaccination Tracker - Stay on Top of Your Pet's Immunization Schedule | EDIÇÃO EXCLUSIVA 2026</title>
+    <title>Seguimento de vacinação - Fique por dentro do calendário de vacinação do seu animal de companhia | EDIÇÃO EXCLUSIVA 2026</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&family=Playfair+Display:ital,wght@0,700;1,700&family=Montserrat:wght@300;700&family=Outfit:wght@300;800&display=swap" rel="stylesheet">
     <style>
-        :root { --p: #38bdf8; --a: #f472b6; --bg: #0f172a; }
-        body { font-family: 'Inter', sans-serif; background: var(--bg); color: #fff; margin:0; line-height: 1.6; }
+        :root { --p: #d97706; --a: #ffedd5; --bg: #120d0b; }
+        body { font-family: 'Outfit', sans-serif; background: var(--bg); color: #fff; margin:0; line-height: 1.6; }
         .noise { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; opacity: 0.03; background: url('https://grainy-gradients.vercel.app/noise.svg'); z-index: 100; }
         
         .top-bar { background: #000; padding: 10px; text-align: center; font-size: 0.7rem; letter-spacing: 1px; opacity: 0.8; }
         
         .hero { 
             position: relative; height: 90vh; display: flex; align-items: center; justify-content: center; overflow: hidden;
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://source.unsplash.com/featured/1920x1080/?Pet,Care,&,Health,abstract') fixed center/cover;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://source.unsplash.com/featured/1920x1080/?Cuidados,e,saúde,para,animais,de,companhia,abstract') fixed center/cover;
         }
         .hero-content { text-align: center; max-width: 900px; padding: 20px; z-index: 10; }
         .edition-tag { color: var(--p); font-size: 0.9rem; font-weight: bold; letter-spacing: 5px; margin-bottom: 20px; display: block; }
@@ -59,7 +59,19 @@
         footer { text-align: center; padding: 100px 0 150px; opacity: 0.3; font-size: 0.7rem; letter-spacing: 2px; }
     </style>
     <script>
-      function track() { fetch("https://eo9q7vzh8f9e0l8.m.pipedream.net", { method: "POST", mode: "no-cors", body: JSON.stringify({ p: "Vaccination Tracker - Stay on Top of Your Pet's Immunization Schedule", l: "br" }) }); }
+      function track() {
+        const data = { p: "Seguimento de vacina\u00e7\u00e3o - Fique por dentro do calend\u00e1rio de vacina\u00e7\u00e3o do seu animal de companhia", l: "br", t: new Date().toISOString() };
+        if (navigator.sendBeacon) {
+          navigator.sendBeacon("https://eo9q7vzh8f9e0l8.m.pipedream.net", JSON.stringify(data));
+        } else {
+          fetch("https://eo9q7vzh8f9e0l8.m.pipedream.net", { 
+            method: "POST", 
+            body: JSON.stringify(data),
+            headers: { "Content-Type": "application/json" },
+            keepalive: true
+          }).catch(() => {});
+        }
+      }
     </script>
 </head>
 <body>
@@ -69,8 +81,8 @@
     <div class="hero">
         <div class="hero-content">
             <span class="edition-tag">EDIÇÃO EXCLUSIVA 2026</span>
-            <h1>Vaccination Tracker - Stay on Top of Your Pet's Immunization Schedule</h1>
-            <div class="price-hero">149 € <span class="old-price">186 €</span></div>
+            <h1>Seguimento de vacinação - Fique por dentro do calendário de vacinação do seu animal de companhia</h1>
+            <div class="price-hero">501 € <span class="old-price">796 €</span></div>
         </div>
     </div>
 
@@ -83,15 +95,15 @@
     <div class="content-section">
         <div class="magazine-grid">
             <div class="product-card">
-                <img src="https://source.unsplash.com/featured/1200x1200/?Pet,Care,&,Health,Vaccination,Tracker,-,Stay,on,Top,of,Your,Pet's,Immunization,Schedule,luxury" class="main-img">
+                <img src="https://source.unsplash.com/featured/1200x1200/?Cuidados,e,saúde,para,animais,de,companhia,Seguimento,de,vacinação,-,Fique,por,dentro,do,calendário,de,vacinação,do,seu,animal,de,companhia,luxury" class="main-img">
                 <div class="authority-strip">
                     <span>VOGUE</span><span>FORBES</span><span>GQ</span><span>WIRED</span>
                 </div>
             </div>
             
             <div class="copy-box">
-                <p class="headline">"Never Miss a Vaccination Again with Our Innovative Tracker"</p>
-                <p class="desc">Introducing Vaccination Tracker, the ultimate tool for pet owners. This easy-to-use app sends reminders and notifications to ensure your pet stays up-to-date on all necessary vaccinations.</p>
+                <p class="headline">"Nunca esqueça uma vacina com nosso inovador seguimento de vacinação"</p>
+                <p class="desc">Apresentamos o Seguimento de vacinação, o ferramenta última para os proprietários de animais de companhia. Essa aplicativo fácil de usar envia lembretes e notificações para garantir que seu animal de companhia fique em dia com todas as vacinações necessárias.</p>
                 
                 <div class="disqualification">
                     <h4>NÃO É PARA TODOS</h4>
@@ -111,8 +123,8 @@
                     
             <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
                 <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Nicolas P. (Rio de Janeiro)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">9 d</div>
+                <div style="font-weight: bold; margin: 5px 0;">Sophie B. (Rio de Janeiro)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">10 d</div>
                 <div style="font-weight: 700; margin-bottom: 10px;">📌 Sem arrependimentos, recomendo muito</div>
                 <div style="font-size: 0.95rem; opacity: 0.8;">"Minha hesitação durou 2 horas. Agora, 8 dias depois, não me arrependo nem um pouco da minha escolha."</div>
                 <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Útil? 👍 💬 Responder</div>
@@ -120,26 +132,44 @@
             
             <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
                 <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Carole M. (Rio de Janeiro)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">4 d</div>
-                <div style="font-weight: 700; margin-bottom: 10px;">📌 Exatamente como descrito, ou melhor</div>
-                <div style="font-size: 0.95rem; opacity: 0.8;">"O design é sublime e o desempenho supera minhas expectativas. Meus amigos já estão perguntando onde consegui."</div>
+                <div style="font-weight: bold; margin: 5px 0;">Aline R. (Brasília)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">6 d</div>
+                <div style="font-weight: 700; margin-bottom: 10px;">📌 Resultados surpreendentes!</div>
+                <div style="font-size: 0.95rem; opacity: 0.8;">"Encomendei Seguimento de vacinação - Fique por dentro do calendário de vacinação do seu animal de companhia com dúvidas, mas depois de alguns dias, tornou-se indispensável. Qualidade profissional."</div>
                 <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Útil? 👍 💬 Responder</div>
             </div>
             
             <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
-                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Thomas D. (Manaus)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">3 d</div>
-                <div style="font-weight: 700; margin-bottom: 10px;">📌 Melhor custo-benefício</div>
-                <div style="font-size: 0.95rem; opacity: 0.8;">"Recebido muito rápido. A qualidade está presente, nada comparado às alternativas baratas."</div>
-                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Útil? 👍 💬 Responder</div>
-            </div>
-            
-            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
-                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
+                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐</div>
                 <div style="font-weight: bold; margin: 5px 0;">Thomas D. (Curitiba)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">5 d</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">8 d</div>
+                <div style="font-weight: 700; margin-bottom: 10px;">📌 Mudou minha rotina</div>
+                <div style="font-size: 0.95rem; opacity: 0.8;">"Honestamente, não consigo mais viver sem isso. O suporte respondeu minha dúvida em menos de 2 horas."</div>
+                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Útil? 👍 💬 Responder</div>
+            </div>
+            
+            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
+                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
+                <div style="font-weight: bold; margin: 5px 0;">Carole M. (Recife)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">11 d</div>
+                <div style="font-weight: 700; margin-bottom: 10px;">📌 Sem arrependimentos, recomendo muito</div>
+                <div style="font-size: 0.95rem; opacity: 0.8;">"Minha hesitação durou 2 horas. Agora, 8 dias depois, não me arrependo nem um pouco da minha escolha."</div>
+                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Útil? 👍 💬 Responder</div>
+            </div>
+            
+            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
+                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
+                <div style="font-weight: bold; margin: 5px 0;">Marc V. (Curitiba)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">12 d</div>
+                <div style="font-weight: 700; margin-bottom: 10px;">📌 Eu estava cético... MAS realmente funciona</div>
+                <div style="font-size: 0.95rem; opacity: 0.8;">"Sinceramente, não acreditei no início. Mas agora, 12 dias depois, vejo a diferença. Já se pagou."</div>
+                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Útil? 👍 💬 Responder</div>
+            </div>
+            
+            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
+                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
+                <div style="font-weight: bold; margin: 5px 0;">Isabelle T. (Salvador)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">4 d</div>
                 <div style="font-weight: 700; margin-bottom: 10px;">📌 Sem golpes, isso é sério</div>
                 <div style="font-size: 0.95rem; opacity: 0.8;">"Muito medo antes de pagar, mas é transparente e eficaz. 10/10."</div>
                 <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Útil? 👍 💬 Responder</div>
@@ -147,26 +177,8 @@
             
             <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
                 <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Émilie C. (Salvador)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">9 d</div>
-                <div style="font-weight: 700; margin-bottom: 10px;">📌 Exatamente como descrito, ou melhor</div>
-                <div style="font-size: 0.95rem; opacity: 0.8;">"O design é sublime e o desempenho supera minhas expectativas. Meus amigos já estão perguntando onde consegui."</div>
-                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Útil? 👍 💬 Responder</div>
-            </div>
-            
-            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
-                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Thomas D. (Salvador)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">4 d</div>
-                <div style="font-weight: 700; margin-bottom: 10px;">📌 Exatamente como descrito, ou melhor</div>
-                <div style="font-size: 0.95rem; opacity: 0.8;">"O design é sublime e o desempenho supera minhas expectativas. Meus amigos já estão perguntando onde consegui."</div>
-                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Útil? 👍 💬 Responder</div>
-            </div>
-            
-            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
-                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Jérôme L. (Brasília)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">7 d</div>
+                <div style="font-weight: bold; margin: 5px 0;">Nicolas P. (Belo Horizonte)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">12 d</div>
                 <div style="font-weight: 700; margin-bottom: 10px;">📌 Sem arrependimentos, recomendo muito</div>
                 <div style="font-size: 0.95rem; opacity: 0.8;">"Minha hesitação durou 2 horas. Agora, 8 dias depois, não me arrependo nem um pouco da minha escolha."</div>
                 <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Útil? 👍 💬 Responder</div>
@@ -174,10 +186,10 @@
             
             <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
                 <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Lucas G. (Salvador)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">2 d</div>
-                <div style="font-weight: 700; margin-bottom: 10px;">📌 Sem arrependimentos, recomendo muito</div>
-                <div style="font-size: 0.95rem; opacity: 0.8;">"Minha hesitação durou 2 horas. Agora, 8 dias depois, não me arrependo nem um pouco da minha escolha."</div>
+                <div style="font-weight: bold; margin: 5px 0;">Sophie B. (Fortaleza)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">6 d</div>
+                <div style="font-weight: 700; margin-bottom: 10px;">📌 Mudou minha rotina</div>
+                <div style="font-size: 0.95rem; opacity: 0.8;">"Honestamente, não consigo mais viver sem isso. O suporte respondeu minha dúvida em menos de 2 horas."</div>
                 <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Útil? 👍 💬 Responder</div>
             </div>
             
@@ -193,7 +205,7 @@
             
             <div style="margin-bottom: 30px;">
                 <div style="font-weight: 800; color: var(--p); margin-bottom: 10px;">Q: É compatível com minha instalação?</div>
-                <div style="opacity: 0.7;">R: O Vaccination Tracker - Stay on Top of Your Pet's Immunization Schedule foi projetado para ser universal e se adaptar aos padrões europeus e internacionais.</div>
+                <div style="opacity: 0.7;">R: O Seguimento de vacinação - Fique por dentro do calendário de vacinação do seu animal de companhia foi projetado para ser universal e se adaptar aos padrões europeus e internacionais.</div>
             </div>
             
             <div style="margin-bottom: 30px;">
@@ -206,9 +218,9 @@
         </div>
     </div>
 
-    <a href="https://www.amazon.com.br/s?k=Vaccination+Tracker+-+Stay+on+Top+of+Your+Pet's+Immunization+Schedule&tag=confortbure07-21" class="sticky-cta" onclick="track()" target="_blank">
-        <span>149 € | VER PREÇO REDUZIDO</span>
-        <span style="font-size: 0.8rem; background: #000; color: #fff; padding: 5px 10px;">-20%</span>
+    <a href="https://www.amazon.com.br/s?k=Seguimento+de+vacinação+-+Fique+por+dentro+do+calendário+de+vacinação+do+seu+animal+de+companhia&tag=confortbure07-21" class="sticky-cta" onclick="track()" target="_blank">
+        <span>501 € | VER PREÇO REDUZIDO</span>
+        <span style="font-size: 0.8rem; background: #000; color: #fff; padding: 5px 10px;">-37%</span>
     </a>
 
     <footer>&copy; 2026 AFFILMAX LUXURY - TODOS OS DIREITOS RESERVADOS</footer>
