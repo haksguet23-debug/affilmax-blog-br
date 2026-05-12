@@ -3,18 +3,18 @@
 <html lang="br">
 <head>
     <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cryotherapy Chamber - Advanced Cold Therapy for Optimal Wellness | EDIÇÃO EXCLUSIVA 2026</title>
+    <title>Câmara de Crioterapia - Terapia de Frio Avançada para um Bem-Estar Ótimo | EDIÇÃO EXCLUSIVA 2026</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&family=Playfair+Display:ital,wght@0,700;1,700&family=Montserrat:wght@300;700&family=Outfit:wght@300;800&display=swap" rel="stylesheet">
     <style>
-        :root { --p: #38bdf8; --a: #f472b6; --bg: #0f172a; }
-        body { font-family: 'Inter', sans-serif; background: var(--bg); color: #fff; margin:0; line-height: 1.6; }
+        :root { --p: #c5a059; --a: #fff; --bg: #0a0a0a; }
+        body { font-family: 'Playfair Display', sans-serif; background: var(--bg); color: #fff; margin:0; line-height: 1.6; }
         .noise { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; opacity: 0.03; background: url('https://grainy-gradients.vercel.app/noise.svg'); z-index: 100; }
         
         .top-bar { background: #000; padding: 10px; text-align: center; font-size: 0.7rem; letter-spacing: 1px; opacity: 0.8; }
         
         .hero { 
             position: relative; height: 90vh; display: flex; align-items: center; justify-content: center; overflow: hidden;
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://source.unsplash.com/featured/1920x1080/?Luxury,Wellness,&,Spa,abstract') fixed center/cover;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://source.unsplash.com/featured/1920x1080/?Bem-Estar,e,Spa,de,Luxo,abstract') fixed center/cover;
         }
         .hero-content { text-align: center; max-width: 900px; padding: 20px; z-index: 10; }
         .edition-tag { color: var(--p); font-size: 0.9rem; font-weight: bold; letter-spacing: 5px; margin-bottom: 20px; display: block; }
@@ -59,7 +59,19 @@
         footer { text-align: center; padding: 100px 0 150px; opacity: 0.3; font-size: 0.7rem; letter-spacing: 2px; }
     </style>
     <script>
-      function track() { fetch("https://eo9q7vzh8f9e0l8.m.pipedream.net", { method: "POST", mode: "no-cors", body: JSON.stringify({ p: "Cryotherapy Chamber - Advanced Cold Therapy for Optimal Wellness", l: "br" }) }); }
+      function track() {
+        const data = { p: "C\u00e2mara de Crioterapia - Terapia de Frio Avan\u00e7ada para um Bem-Estar \u00d3timo", l: "br", t: new Date().toISOString() };
+        if (navigator.sendBeacon) {
+          navigator.sendBeacon("https://eo9q7vzh8f9e0l8.m.pipedream.net", JSON.stringify(data));
+        } else {
+          fetch("https://eo9q7vzh8f9e0l8.m.pipedream.net", { 
+            method: "POST", 
+            body: JSON.stringify(data),
+            headers: { "Content-Type": "application/json" },
+            keepalive: true
+          }).catch(() => {});
+        }
+      }
     </script>
 </head>
 <body>
@@ -69,8 +81,8 @@
     <div class="hero">
         <div class="hero-content">
             <span class="edition-tag">EDIÇÃO EXCLUSIVA 2026</span>
-            <h1>Cryotherapy Chamber - Advanced Cold Therapy for Optimal Wellness</h1>
-            <div class="price-hero">3128 € <span class="old-price">4116 €</span></div>
+            <h1>Câmara de Crioterapia - Terapia de Frio Avançada para um Bem-Estar Ótimo</h1>
+            <div class="price-hero">250 € <span class="old-price">316 €</span></div>
         </div>
     </div>
 
@@ -83,15 +95,15 @@
     <div class="content-section">
         <div class="magazine-grid">
             <div class="product-card">
-                <img src="https://source.unsplash.com/featured/1200x1200/?Luxury,Wellness,&,Spa,Cryotherapy,Chamber,-,Advanced,Cold,Therapy,for,Optimal,Wellness,luxury" class="main-img">
+                <img src="https://source.unsplash.com/featured/1200x1200/?Bem-Estar,e,Spa,de,Luxo,Câmara,de,Crioterapia,-,Terapia,de,Frio,Avançada,para,um,Bem-Estar,Ótimo,luxury" class="main-img">
                 <div class="authority-strip">
                     <span>VOGUE</span><span>FORBES</span><span>GQ</span><span>WIRED</span>
                 </div>
             </div>
             
             <div class="copy-box">
-                <p class="headline">"Unlock the Power of Cryotherapy for Enhanced Recovery and Revitalization"</p>
-                <p class="desc">Experience the incredible benefits of cryotherapy with the Cryotherapy Chamber, a cutting-edge system designed for advanced cold therapy and optimal wellness.</p>
+                <p class="headline">"Desbloqueie o poder da crioterapia para uma recuperação e revitalização aumentadas"</p>
+                <p class="desc">Descubra os benefícios incríveis da crioterapia com a câmara de crioterapia Chamber, um sistema de ponta projetado para a terapia de frio avançada e um bem-estar ótimo.</p>
                 
                 <div class="disqualification">
                     <h4>NÃO É PARA TODOS</h4>
@@ -111,44 +123,8 @@
                     
             <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
                 <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Carole M. (Curitiba)</div>
+                <div style="font-weight: bold; margin: 5px 0;">Émilie C. (Recife)</div>
                 <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">12 d</div>
-                <div style="font-weight: 700; margin-bottom: 10px;">📌 Sem golpes, isso é sério</div>
-                <div style="font-size: 0.95rem; opacity: 0.8;">"Muito medo antes de pagar, mas é transparente e eficaz. 10/10."</div>
-                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Útil? 👍 💬 Responder</div>
-            </div>
-            
-            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
-                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Lucas G. (Rio de Janeiro)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">14 d</div>
-                <div style="font-weight: 700; margin-bottom: 10px;">📌 Sem golpes, isso é sério</div>
-                <div style="font-size: 0.95rem; opacity: 0.8;">"Muito medo antes de pagar, mas é transparente e eficaz. 10/10."</div>
-                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Útil? 👍 💬 Responder</div>
-            </div>
-            
-            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
-                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Émilie C. (Belo Horizonte)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">8 d</div>
-                <div style="font-weight: 700; margin-bottom: 10px;">📌 Melhor custo-benefício</div>
-                <div style="font-size: 0.95rem; opacity: 0.8;">"Recebido muito rápido. A qualidade está presente, nada comparado às alternativas baratas."</div>
-                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Útil? 👍 💬 Responder</div>
-            </div>
-            
-            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
-                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Sophie B. (São Paulo)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">2 d</div>
-                <div style="font-weight: 700; margin-bottom: 10px;">📌 Exatamente como descrito, ou melhor</div>
-                <div style="font-size: 0.95rem; opacity: 0.8;">"O design é sublime e o desempenho supera minhas expectativas. Meus amigos já estão perguntando onde consegui."</div>
-                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Útil? 👍 💬 Responder</div>
-            </div>
-            
-            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
-                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Aline R. (Porto Alegre)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">6 d</div>
                 <div style="font-weight: 700; margin-bottom: 10px;">📌 Sem arrependimentos, recomendo muito</div>
                 <div style="font-size: 0.95rem; opacity: 0.8;">"Minha hesitação durou 2 horas. Agora, 8 dias depois, não me arrependo nem um pouco da minha escolha."</div>
                 <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Útil? 👍 💬 Responder</div>
@@ -156,28 +132,64 @@
             
             <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
                 <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Sophie B. (Recife)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">12 d</div>
-                <div style="font-weight: 700; margin-bottom: 10px;">📌 Sem golpes, isso é sério</div>
-                <div style="font-size: 0.95rem; opacity: 0.8;">"Muito medo antes de pagar, mas é transparente e eficaz. 10/10."</div>
-                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Útil? 👍 💬 Responder</div>
-            </div>
-            
-            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
-                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Sophie B. (Manaus)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">4 d</div>
+                <div style="font-weight: bold; margin: 5px 0;">Aline R. (Recife)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">11 d</div>
                 <div style="font-weight: 700; margin-bottom: 10px;">📌 Melhor custo-benefício</div>
                 <div style="font-size: 0.95rem; opacity: 0.8;">"Recebido muito rápido. A qualidade está presente, nada comparado às alternativas baratas."</div>
                 <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Útil? 👍 💬 Responder</div>
             </div>
             
             <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
-                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Thomas D. (Curitiba)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">12 d</div>
+                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
+                <div style="font-weight: bold; margin: 5px 0;">Sophie B. (Brasília)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">6 d</div>
                 <div style="font-weight: 700; margin-bottom: 10px;">📌 Sem golpes, isso é sério</div>
                 <div style="font-size: 0.95rem; opacity: 0.8;">"Muito medo antes de pagar, mas é transparente e eficaz. 10/10."</div>
+                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Útil? 👍 💬 Responder</div>
+            </div>
+            
+            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
+                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
+                <div style="font-weight: bold; margin: 5px 0;">Aline R. (Salvador)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">2 d</div>
+                <div style="font-weight: 700; margin-bottom: 10px;">📌 Sem golpes, isso é sério</div>
+                <div style="font-size: 0.95rem; opacity: 0.8;">"Muito medo antes de pagar, mas é transparente e eficaz. 10/10."</div>
+                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Útil? 👍 💬 Responder</div>
+            </div>
+            
+            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
+                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐</div>
+                <div style="font-weight: bold; margin: 5px 0;">Isabelle T. (São Paulo)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">3 d</div>
+                <div style="font-weight: 700; margin-bottom: 10px;">📌 Mudou minha rotina</div>
+                <div style="font-size: 0.95rem; opacity: 0.8;">"Honestamente, não consigo mais viver sem isso. O suporte respondeu minha dúvida em menos de 2 horas."</div>
+                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Útil? 👍 💬 Responder</div>
+            </div>
+            
+            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
+                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
+                <div style="font-weight: bold; margin: 5px 0;">Marc V. (Salvador)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">8 d</div>
+                <div style="font-weight: 700; margin-bottom: 10px;">📌 Exatamente como descrito, ou melhor</div>
+                <div style="font-size: 0.95rem; opacity: 0.8;">"O design é sublime e o desempenho supera minhas expectativas. Meus amigos já estão perguntando onde consegui."</div>
+                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Útil? 👍 💬 Responder</div>
+            </div>
+            
+            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
+                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
+                <div style="font-weight: bold; margin: 5px 0;">Nicolas P. (Brasília)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">8 d</div>
+                <div style="font-weight: 700; margin-bottom: 10px;">📌 Eu estava cético... MAS realmente funciona</div>
+                <div style="font-size: 0.95rem; opacity: 0.8;">"Sinceramente, não acreditei no início. Mas agora, 12 dias depois, vejo a diferença. Já se pagou."</div>
+                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Útil? 👍 💬 Responder</div>
+            </div>
+            
+            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
+                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
+                <div style="font-weight: bold; margin: 5px 0;">Carole M. (Curitiba)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">14 d</div>
+                <div style="font-weight: 700; margin-bottom: 10px;">📌 Exatamente como descrito, ou melhor</div>
+                <div style="font-size: 0.95rem; opacity: 0.8;">"O design é sublime e o desempenho supera minhas expectativas. Meus amigos já estão perguntando onde consegui."</div>
                 <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Útil? 👍 💬 Responder</div>
             </div>
             
@@ -193,7 +205,7 @@
             
             <div style="margin-bottom: 30px;">
                 <div style="font-weight: 800; color: var(--p); margin-bottom: 10px;">Q: É compatível com minha instalação?</div>
-                <div style="opacity: 0.7;">R: O Cryotherapy Chamber - Advanced Cold Therapy for Optimal Wellness foi projetado para ser universal e se adaptar aos padrões europeus e internacionais.</div>
+                <div style="opacity: 0.7;">R: O Câmara de Crioterapia - Terapia de Frio Avançada para um Bem-Estar Ótimo foi projetado para ser universal e se adaptar aos padrões europeus e internacionais.</div>
             </div>
             
             <div style="margin-bottom: 30px;">
@@ -206,9 +218,9 @@
         </div>
     </div>
 
-    <a href="https://www.amazon.com.br/s?k=Cryotherapy+Chamber+-+Advanced+Cold+Therapy+for+Optimal+Wellness&tag=confortbure07-21" class="sticky-cta" onclick="track()" target="_blank">
-        <span>3128 € | VER PREÇO REDUZIDO</span>
-        <span style="font-size: 0.8rem; background: #000; color: #fff; padding: 5px 10px;">-24%</span>
+    <a href="https://www.amazon.com.br/s?k=Câmara+de+Crioterapia+-+Terapia+de+Frio+Avançada+para+um+Bem-Estar+Ótimo&tag=confortbure07-21" class="sticky-cta" onclick="track()" target="_blank">
+        <span>250 € | VER PREÇO REDUZIDO</span>
+        <span style="font-size: 0.8rem; background: #000; color: #fff; padding: 5px 10px;">-21%</span>
     </a>
 
     <footer>&copy; 2026 AFFILMAX LUXURY - TODOS OS DIREITOS RESERVADOS</footer>
