@@ -3,7 +3,7 @@
 <html lang="br">
 <head>
     <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Travel Wallet for Digital Nomads | EDIÇÃO EXCLUSIVA 2026</title>
+    <title>Portefeuille de Viagem Intellectual para Moedas | EDIÇÃO EXCLUSIVA 2026</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&family=Playfair+Display:ital,wght@0,700;1,700&family=Montserrat:wght@300;700&family=Outfit:wght@300;800&display=swap" rel="stylesheet">
     <style>
         :root { --p: #8fb935; --a: #fff; --bg: #1a1c1a; }
@@ -14,7 +14,7 @@
         
         .hero { 
             position: relative; height: 90vh; display: flex; align-items: center; justify-content: center; overflow: hidden;
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://source.unsplash.com/featured/1920x1080/?Travel,Accessories,abstract') fixed center/cover;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://source.unsplash.com/featured/1920x1080/?Acessórios,de,Viagem,abstract') fixed center/cover;
         }
         .hero-content { text-align: center; max-width: 900px; padding: 20px; z-index: 10; }
         .edition-tag { color: var(--p); font-size: 0.9rem; font-weight: bold; letter-spacing: 5px; margin-bottom: 20px; display: block; }
@@ -59,7 +59,19 @@
         footer { text-align: center; padding: 100px 0 150px; opacity: 0.3; font-size: 0.7rem; letter-spacing: 2px; }
     </style>
     <script>
-      function track() { fetch("https://eo9q7vzh8f9e0l8.m.pipedream.net", { method: "POST", mode: "no-cors", body: JSON.stringify({ p: "Smart Travel Wallet for Digital Nomads", l: "br" }) }); }
+      function track() {
+        const data = { p: "Portefeuille de Viagem Intellectual para Moedas", l: "br", t: new Date().toISOString() };
+        if (navigator.sendBeacon) {
+          navigator.sendBeacon("https://eo9q7vzh8f9e0l8.m.pipedream.net", JSON.stringify(data));
+        } else {
+          fetch("https://eo9q7vzh8f9e0l8.m.pipedream.net", { 
+            method: "POST", 
+            body: JSON.stringify(data),
+            headers: { "Content-Type": "application/json" },
+            keepalive: true
+          }).catch(() => {});
+        }
+      }
     </script>
 </head>
 <body>
@@ -69,8 +81,8 @@
     <div class="hero">
         <div class="hero-content">
             <span class="edition-tag">EDIÇÃO EXCLUSIVA 2026</span>
-            <h1>Smart Travel Wallet for Digital Nomads</h1>
-            <div class="price-hero">551 € <span class="old-price">689 €</span></div>
+            <h1>Portefeuille de Viagem Intellectual para Moedas</h1>
+            <div class="price-hero">834 € <span class="old-price">1192 €</span></div>
         </div>
     </div>
 
@@ -83,15 +95,15 @@
     <div class="content-section">
         <div class="magazine-grid">
             <div class="product-card">
-                <img src="https://source.unsplash.com/featured/1200x1200/?Travel,Accessories,Smart,Travel,Wallet,for,Digital,Nomads,luxury" class="main-img">
+                <img src="https://source.unsplash.com/featured/1200x1200/?Acessórios,de,Viagem,Portefeuille,de,Viagem,Intellectual,para,Moedas,luxury" class="main-img">
                 <div class="authority-strip">
                     <span>VOGUE</span><span>FORBES</span><span>GQ</span><span>WIRED</span>
                 </div>
             </div>
             
             <div class="copy-box">
-                <p class="headline">"Stay Organized and Secure with Our Innovative Smart Travel Wallet"</p>
-                <p class="desc">Keep your valuables and travel documents safe and secure with our state-of-the-art smart wallet. Enjoy RFID-blocking material, secure storage, and a sleek design that fits comfortably in your pocket.</p>
+                <p class="headline">"Fique Organizado e em Segurança com o Nosso Portefeuille de Viagem Intellectual"</p>
+                <p class="desc">Considere suas valores e documentos de viagem em toda segurança e segurança com nosso portefeuille de alta tecnologia. Desfrute de um material antiblindagem RFID, de um armazenamento seguro e de uma concepção elegante que se adapta confortavelmente em sua bolsa.</p>
                 
                 <div class="disqualification">
                     <h4>NÃO É PARA TODOS</h4>
@@ -111,71 +123,71 @@
                     
             <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
                 <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Nicolas P. (Porto Alegre)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">14 d</div>
-                <div style="font-weight: 700; margin-bottom: 10px;">📌 Melhor custo-benefício</div>
-                <div style="font-size: 0.95rem; opacity: 0.8;">"Recebido muito rápido. A qualidade está presente, nada comparado às alternativas baratas."</div>
-                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Útil? 👍 💬 Responder</div>
-            </div>
-            
-            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
-                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Lucas G. (Recife)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">12 d</div>
+                <div style="font-weight: bold; margin: 5px 0;">Aline R. (Manaus)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">2 d</div>
                 <div style="font-weight: 700; margin-bottom: 10px;">📌 Exatamente como descrito, ou melhor</div>
                 <div style="font-size: 0.95rem; opacity: 0.8;">"O design é sublime e o desempenho supera minhas expectativas. Meus amigos já estão perguntando onde consegui."</div>
                 <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Útil? 👍 💬 Responder</div>
             </div>
             
             <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
-                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Thomas D. (Recife)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">9 d</div>
-                <div style="font-weight: 700; margin-bottom: 10px;">📌 Melhor custo-benefício</div>
-                <div style="font-size: 0.95rem; opacity: 0.8;">"Recebido muito rápido. A qualidade está presente, nada comparado às alternativas baratas."</div>
+                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
+                <div style="font-weight: bold; margin: 5px 0;">Aline R. (Fortaleza)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">6 d</div>
+                <div style="font-weight: 700; margin-bottom: 10px;">📌 Exatamente como descrito, ou melhor</div>
+                <div style="font-size: 0.95rem; opacity: 0.8;">"O design é sublime e o desempenho supera minhas expectativas. Meus amigos já estão perguntando onde consegui."</div>
                 <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Útil? 👍 💬 Responder</div>
             </div>
             
             <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
                 <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Marc V. (Curitiba)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">4 d</div>
-                <div style="font-weight: 700; margin-bottom: 10px;">📌 Melhor custo-benefício</div>
-                <div style="font-size: 0.95rem; opacity: 0.8;">"Recebido muito rápido. A qualidade está presente, nada comparado às alternativas baratas."</div>
-                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Útil? 👍 💬 Responder</div>
-            </div>
-            
-            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
-                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Jérôme L. (Curitiba)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">9 d</div>
-                <div style="font-weight: 700; margin-bottom: 10px;">📌 Sem golpes, isso é sério</div>
-                <div style="font-size: 0.95rem; opacity: 0.8;">"Muito medo antes de pagar, mas é transparente e eficaz. 10/10."</div>
-                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Útil? 👍 💬 Responder</div>
-            </div>
-            
-            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
-                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Carole M. (Belo Horizonte)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">10 d</div>
-                <div style="font-weight: 700; margin-bottom: 10px;">📌 Melhor custo-benefício</div>
-                <div style="font-size: 0.95rem; opacity: 0.8;">"Recebido muito rápido. A qualidade está presente, nada comparado às alternativas baratas."</div>
+                <div style="font-weight: bold; margin: 5px 0;">Isabelle T. (Curitiba)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">3 d</div>
+                <div style="font-weight: 700; margin-bottom: 10px;">📌 Exatamente como descrito, ou melhor</div>
+                <div style="font-size: 0.95rem; opacity: 0.8;">"O design é sublime e o desempenho supera minhas expectativas. Meus amigos já estão perguntando onde consegui."</div>
                 <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Útil? 👍 💬 Responder</div>
             </div>
             
             <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
                 <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Marc V. (Salvador)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">10 d</div>
-                <div style="font-weight: 700; margin-bottom: 10px;">📌 Sem golpes, isso é sério</div>
-                <div style="font-size: 0.95rem; opacity: 0.8;">"Muito medo antes de pagar, mas é transparente e eficaz. 10/10."</div>
+                <div style="font-weight: bold; margin: 5px 0;">Marc V. (Brasília)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">8 d</div>
+                <div style="font-weight: 700; margin-bottom: 10px;">📌 Exatamente como descrito, ou melhor</div>
+                <div style="font-size: 0.95rem; opacity: 0.8;">"O design é sublime e o desempenho supera minhas expectativas. Meus amigos já estão perguntando onde consegui."</div>
                 <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Útil? 👍 💬 Responder</div>
             </div>
             
             <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
                 <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Thomas D. (Manaus)</div>
+                <div style="font-weight: bold; margin: 5px 0;">Sophie B. (Curitiba)</div>
                 <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">2 d</div>
+                <div style="font-weight: 700; margin-bottom: 10px;">📌 Exatamente como descrito, ou melhor</div>
+                <div style="font-size: 0.95rem; opacity: 0.8;">"O design é sublime e o desempenho supera minhas expectativas. Meus amigos já estão perguntando onde consegui."</div>
+                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Útil? 👍 💬 Responder</div>
+            </div>
+            
+            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
+                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
+                <div style="font-weight: bold; margin: 5px 0;">Thomas D. (São Paulo)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">9 d</div>
+                <div style="font-weight: 700; margin-bottom: 10px;">📌 Mudou minha rotina</div>
+                <div style="font-size: 0.95rem; opacity: 0.8;">"Honestamente, não consigo mais viver sem isso. O suporte respondeu minha dúvida em menos de 2 horas."</div>
+                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Útil? 👍 💬 Responder</div>
+            </div>
+            
+            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
+                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
+                <div style="font-weight: bold; margin: 5px 0;">Nicolas P. (Porto Alegre)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">6 d</div>
+                <div style="font-weight: 700; margin-bottom: 10px;">📌 Sem arrependimentos, recomendo muito</div>
+                <div style="font-size: 0.95rem; opacity: 0.8;">"Minha hesitação durou 2 horas. Agora, 8 dias depois, não me arrependo nem um pouco da minha escolha."</div>
+                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Útil? 👍 💬 Responder</div>
+            </div>
+            
+            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
+                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
+                <div style="font-weight: bold; margin: 5px 0;">Nicolas P. (Salvador)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">4 d</div>
                 <div style="font-weight: 700; margin-bottom: 10px;">📌 Sem arrependimentos, recomendo muito</div>
                 <div style="font-size: 0.95rem; opacity: 0.8;">"Minha hesitação durou 2 horas. Agora, 8 dias depois, não me arrependo nem um pouco da minha escolha."</div>
                 <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Útil? 👍 💬 Responder</div>
@@ -193,7 +205,7 @@
             
             <div style="margin-bottom: 30px;">
                 <div style="font-weight: 800; color: var(--p); margin-bottom: 10px;">Q: É compatível com minha instalação?</div>
-                <div style="opacity: 0.7;">R: O Smart Travel Wallet for Digital Nomads foi projetado para ser universal e se adaptar aos padrões europeus e internacionais.</div>
+                <div style="opacity: 0.7;">R: O Portefeuille de Viagem Intellectual para Moedas foi projetado para ser universal e se adaptar aos padrões europeus e internacionais.</div>
             </div>
             
             <div style="margin-bottom: 30px;">
@@ -206,9 +218,9 @@
         </div>
     </div>
 
-    <a href="https://www.amazon.com.br/s?k=Smart+Travel+Wallet+for+Digital+Nomads&tag=confortbure07-21" class="sticky-cta" onclick="track()" target="_blank">
-        <span>551 € | VER PREÇO REDUZIDO</span>
-        <span style="font-size: 0.8rem; background: #000; color: #fff; padding: 5px 10px;">-20%</span>
+    <a href="https://www.amazon.com.br/s?k=Portefeuille+de+Viagem+Intellectual+para+Moedas&tag=confortbure07-21" class="sticky-cta" onclick="track()" target="_blank">
+        <span>834 € | VER PREÇO REDUZIDO</span>
+        <span style="font-size: 0.8rem; background: #000; color: #fff; padding: 5px 10px;">-30%</span>
     </a>
 
     <footer>&copy; 2026 AFFILMAX LUXURY - TODOS OS DIREITOS RESERVADOS</footer>
