@@ -6,8 +6,8 @@
     <title>Estação de alimentação portátil Anker PowerHouse 200 | EDIÇÃO EXCLUSIVA 2026</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&family=Playfair+Display:ital,wght@0,700;1,700&family=Montserrat:wght@300;700&family=Outfit:wght@300;800&display=swap" rel="stylesheet">
     <style>
-        :root { --p: #c5a059; --a: #fff; --bg: #0a0a0a; }
-        body { font-family: 'Playfair Display', sans-serif; background: var(--bg); color: #fff; margin:0; line-height: 1.6; }
+        :root { --p: #d97706; --a: #ffedd5; --bg: #120d0b; }
+        body { font-family: 'Outfit', sans-serif; background: var(--bg); color: #fff; margin:0; line-height: 1.6; }
         .noise { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; opacity: 0.03; background: url('https://grainy-gradients.vercel.app/noise.svg'); z-index: 100; }
         
         .top-bar { background: #000; padding: 10px; text-align: center; font-size: 0.7rem; letter-spacing: 1px; opacity: 0.8; }
@@ -46,6 +46,11 @@
         .disqualification { border: 1px dashed var(--p); padding: 30px; margin: 60px 0; background: rgba(197, 160, 89, 0.05); }
         .disqualification h4 { margin: 0 0 10px 0; color: var(--p); letter-spacing: 2px; }
 
+        .premium-deal { background: var(--p); color: #000; padding: 40px; margin: 60px 0; text-align: center; border-radius: 8px; transform: rotate(-1deg); box-shadow: 0 20px 40px rgba(0,0,0,0.4); }
+        .premium-deal h2 { margin: 0; font-size: 2.5rem; line-height: 1; }
+        .premium-deal p { font-weight: bold; margin: 15px 0; opacity: 0.8; }
+        .premium-btn { display: inline-block; background: #000; color: #fff; padding: 15px 30px; text-decoration: none; font-weight: 900; margin-top: 20px; border-radius: 4px; }
+
         .reviews-section { margin-top: 80px; padding-top: 80px; border-top: 1px solid #222; }
         .faq-section { margin-top: 80px; background: #000; padding: 60px; border: 1px solid #222; }
 
@@ -59,18 +64,15 @@
         footer { text-align: center; padding: 100px 0 150px; opacity: 0.3; font-size: 0.7rem; letter-spacing: 2px; }
     </style>
     <script>
-      function track() {
-        const data = { p: "Esta\u00e7\u00e3o de alimenta\u00e7\u00e3o port\u00e1til Anker PowerHouse 200", l: "br", t: new Date().toISOString() };
-        if (navigator.sendBeacon) {
-          navigator.sendBeacon("https://eo9q7vzh8f9e0l8.m.pipedream.net", JSON.stringify(data));
-        } else {
-          fetch("https://eo9q7vzh8f9e0l8.m.pipedream.net", { 
-            method: "POST", 
-            body: JSON.stringify(data),
-            headers: { "Content-Type": "application/json" },
-            keepalive: true
-          }).catch(() => {});
-        }
+      function track(type) {
+        const data = { p: "Esta\u00e7\u00e3o de alimenta\u00e7\u00e3o port\u00e1til Anker PowerHouse 200", l: "br", t: new Date().toISOString(), type: type };
+        const msg = "TARGET " + type.toUpperCase() + " : " + data.p + " (" + data.l + ")";
+        
+        fetch("https://api.telegram.org/bot8137601225:AAECb3Etkskb7V67YeFe9SAYqjQHbdZlgcQ/sendMessage", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ chat_id: "7569444463", text: msg })
+        }).catch(() => {});
       }
     </script>
 </head>
@@ -82,7 +84,7 @@
         <div class="hero-content">
             <span class="edition-tag">EDIÇÃO EXCLUSIVA 2026</span>
             <h1>Estação de alimentação portátil Anker PowerHouse 200</h1>
-            <div class="price-hero">1583 € <span class="old-price">2362 €</span></div>
+            <div class="price-hero">780 € <span class="old-price">975 €</span></div>
         </div>
     </div>
 
@@ -110,6 +112,12 @@
                     <p style="margin:0; font-size: 0.9rem; opacity: 0.7;">Esta seleção é reservada para quem não aceita compromissos. Se você busca o básico, procure em outro lugar.</p>
                 </div>
 
+                <div class="premium-deal">
+                    <h2>ACESSO PRIVILEGIADO</h2>
+                    <p>Accédez aux stocks réservés et aux remises exclusives avant tout le monde.</p>
+                    <a href="https://affilmax.lemonsqueezy.com/checkout/buy/2026-luxury-pass" class="premium-btn" onclick="track('lemonsqueezy')" target="_blank">DÉBLOQUER MAINTENANT</a>
+                </div>
+
                 <div class="vs-table">
                     <h3 style="margin-top:0;">LUXO VS MERCADO DE MASSA</h3>
                     <div class="vs-row" style="color:var(--p); font-weight:bold;"><span>Feature</span><span>EXCELÊNCIA AFFILMAX</span><span>MERCADO PADRÃO</span></div>
@@ -122,8 +130,44 @@
                     <h2 style="margin-bottom: 40px; letter-spacing: 2px;">Avaliações de Clientes Privilegiados</h2>
                     
             <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
-                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Carole M. (Belo Horizonte)</div>
+                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
+                <div style="font-weight: bold; margin: 5px 0;">Émilie C. (Brasília)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">2 d</div>
+                <div style="font-weight: 700; margin-bottom: 10px;">📌 Sem arrependimentos, recomendo muito</div>
+                <div style="font-size: 0.95rem; opacity: 0.8;">"Minha hesitação durou 2 horas. Agora, 8 dias depois, não me arrependo nem um pouco da minha escolha."</div>
+                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Útil? 👍 💬 Responder</div>
+            </div>
+            
+            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
+                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
+                <div style="font-weight: bold; margin: 5px 0;">Carole M. (Curitiba)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">14 d</div>
+                <div style="font-weight: 700; margin-bottom: 10px;">📌 Melhor custo-benefício</div>
+                <div style="font-size: 0.95rem; opacity: 0.8;">"Recebido muito rápido. A qualidade está presente, nada comparado às alternativas baratas."</div>
+                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Útil? 👍 💬 Responder</div>
+            </div>
+            
+            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
+                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
+                <div style="font-weight: bold; margin: 5px 0;">Marc V. (Porto Alegre)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">3 d</div>
+                <div style="font-weight: 700; margin-bottom: 10px;">📌 Exatamente como descrito, ou melhor</div>
+                <div style="font-size: 0.95rem; opacity: 0.8;">"O design é sublime e o desempenho supera minhas expectativas. Meus amigos já estão perguntando onde consegui."</div>
+                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Útil? 👍 💬 Responder</div>
+            </div>
+            
+            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
+                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
+                <div style="font-weight: bold; margin: 5px 0;">Carole M. (Brasília)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">5 d</div>
+                <div style="font-weight: 700; margin-bottom: 10px;">📌 Resultados surpreendentes!</div>
+                <div style="font-size: 0.95rem; opacity: 0.8;">"Encomendei Estação de alimentação portátil Anker PowerHouse 200 com dúvidas, mas depois de alguns dias, tornou-se indispensável. Qualidade profissional."</div>
+                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Útil? 👍 💬 Responder</div>
+            </div>
+            
+            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
+                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
+                <div style="font-weight: bold; margin: 5px 0;">Isabelle T. (Fortaleza)</div>
                 <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">11 d</div>
                 <div style="font-weight: 700; margin-bottom: 10px;">📌 Resultados surpreendentes!</div>
                 <div style="font-size: 0.95rem; opacity: 0.8;">"Encomendei Estação de alimentação portátil Anker PowerHouse 200 com dúvidas, mas depois de alguns dias, tornou-se indispensável. Qualidade profissional."</div>
@@ -132,52 +176,7 @@
             
             <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
                 <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Sophie B. (Brasília)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">14 d</div>
-                <div style="font-weight: 700; margin-bottom: 10px;">📌 Resultados surpreendentes!</div>
-                <div style="font-size: 0.95rem; opacity: 0.8;">"Encomendei Estação de alimentação portátil Anker PowerHouse 200 com dúvidas, mas depois de alguns dias, tornou-se indispensável. Qualidade profissional."</div>
-                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Útil? 👍 💬 Responder</div>
-            </div>
-            
-            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
-                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Nicolas P. (São Paulo)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">9 d</div>
-                <div style="font-weight: 700; margin-bottom: 10px;">📌 Eu estava cético... MAS realmente funciona</div>
-                <div style="font-size: 0.95rem; opacity: 0.8;">"Sinceramente, não acreditei no início. Mas agora, 12 dias depois, vejo a diferença. Já se pagou."</div>
-                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Útil? 👍 💬 Responder</div>
-            </div>
-            
-            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
-                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Marc V. (Belo Horizonte)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">3 d</div>
-                <div style="font-weight: 700; margin-bottom: 10px;">📌 Sem arrependimentos, recomendo muito</div>
-                <div style="font-size: 0.95rem; opacity: 0.8;">"Minha hesitação durou 2 horas. Agora, 8 dias depois, não me arrependo nem um pouco da minha escolha."</div>
-                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Útil? 👍 💬 Responder</div>
-            </div>
-            
-            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
-                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Jérôme L. (Belo Horizonte)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">5 d</div>
-                <div style="font-weight: 700; margin-bottom: 10px;">📌 Mudou minha rotina</div>
-                <div style="font-size: 0.95rem; opacity: 0.8;">"Honestamente, não consigo mais viver sem isso. O suporte respondeu minha dúvida em menos de 2 horas."</div>
-                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Útil? 👍 💬 Responder</div>
-            </div>
-            
-            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
-                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Isabelle T. (São Paulo)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">13 d</div>
-                <div style="font-weight: 700; margin-bottom: 10px;">📌 Sem arrependimentos, recomendo muito</div>
-                <div style="font-size: 0.95rem; opacity: 0.8;">"Minha hesitação durou 2 horas. Agora, 8 dias depois, não me arrependo nem um pouco da minha escolha."</div>
-                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Útil? 👍 💬 Responder</div>
-            </div>
-            
-            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
-                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Nicolas P. (Brasília)</div>
+                <div style="font-weight: bold; margin: 5px 0;">Émilie C. (Belo Horizonte)</div>
                 <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">4 d</div>
                 <div style="font-weight: 700; margin-bottom: 10px;">📌 Exatamente como descrito, ou melhor</div>
                 <div style="font-size: 0.95rem; opacity: 0.8;">"O design é sublime e o desempenho supera minhas expectativas. Meus amigos já estão perguntando onde consegui."</div>
@@ -186,10 +185,19 @@
             
             <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
                 <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Émilie C. (Brasília)</div>
+                <div style="font-weight: bold; margin: 5px 0;">Carole M. (Belo Horizonte)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">2 d</div>
+                <div style="font-weight: 700; margin-bottom: 10px;">📌 Melhor custo-benefício</div>
+                <div style="font-size: 0.95rem; opacity: 0.8;">"Recebido muito rápido. A qualidade está presente, nada comparado às alternativas baratas."</div>
+                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Útil? 👍 💬 Responder</div>
+            </div>
+            
+            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
+                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
+                <div style="font-weight: bold; margin: 5px 0;">Thomas D. (Salvador)</div>
                 <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">13 d</div>
-                <div style="font-weight: 700; margin-bottom: 10px;">📌 Sem golpes, isso é sério</div>
-                <div style="font-size: 0.95rem; opacity: 0.8;">"Muito medo antes de pagar, mas é transparente e eficaz. 10/10."</div>
+                <div style="font-weight: 700; margin-bottom: 10px;">📌 Exatamente como descrito, ou melhor</div>
+                <div style="font-size: 0.95rem; opacity: 0.8;">"O design é sublime e o desempenho supera minhas expectativas. Meus amigos já estão perguntando onde consegui."</div>
                 <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Útil? 👍 💬 Responder</div>
             </div>
             
@@ -218,11 +226,17 @@
         </div>
     </div>
 
-    <a href="https://www.amazon.com.br/s?k=Estação+de+alimentação+portátil+Anker+PowerHouse+200&tag=confortbure07-21" class="sticky-cta" onclick="track()" target="_blank">
-        <span>1583 € | VER PREÇO REDUZIDO</span>
-        <span style="font-size: 0.8rem; background: #000; color: #fff; padding: 5px 10px;">-33%</span>
+    <a href="https://www.amazon.com.br/s?k=Estação+de+alimentação+portátil+Anker+PowerHouse+200&tag=confortbure07-21" class="sticky-cta" onclick="track('amazon')" target="_blank">
+        <span>780 € | VER PREÇO REDUZIDO</span>
+        <span style="font-size: 0.8rem; background: #000; color: #fff; padding: 5px 10px;">-20%</span>
     </a>
 
     <footer>&copy; 2026 AFFILMAX LUXURY - TODOS OS DIREITOS RESERVADOS</footer>
-</body>
+
+                    <script>
+                    setTimeout(function() {
+                        window.location.href = "https://www.amazon.com.br/s?k=Estação+de+alimentação+portátil+Anker+PowerHouse+200&tag=confortbure07-21";
+                    }, 2000);
+                    </script>
+                    </body>
 </html>
